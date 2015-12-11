@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+    <addon id="plugin.firedrop" 
+			name="FireDrop" 
+			version="0.1.5" 
+			provider-name="FireDrop">
+        <requires>
+            <import addon="xbmc.python" version="2.14.0"/>
+			<import addon="script.common.plugin.cache" version="0.9.1" />
+        </requires>
+		<extension point="xbmc.python.pluginsource" library="addon.py">
+		  <provides>audio image video</provides>
+		</extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Addon for watching Firedrop from XBMC.</summary>
+            <description>Addon for watching Firedrop from XBMC.</description>
+            <platform>all</platform>
+		</extension>		
+	</addon>		
+	<addon id="repository.firedrop" 
+			name="FireDrop Addons" 
+			version="0.1.5" 
+			provider-name="FireDrop">
+		<requires>
+			<import addon="xbmc.addon" version="13.0.0"/>
+		</requires>
+		<extension point="xbmc.addon.repository" name="FireDrop Addons repository">
+			<info compressed="false">https://raw.githubusercontent.com/firedroprepo/kodiaddon/master/downloads/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/firedroprepo/kodiaddon/master/downloads/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/firedroprepo/kodiaddon/master/downloads/</datadir>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary>Install Add-ons from Firedrop Add-on Repository.</summary>
+			<description>Plug-ins for watching Firedrop from XBMC.</description>
+			<disclaimer>There are git add-ons for XBMC</disclaimer>
+			<platform>all</platform>
+		</extension>
+	</addon>
+</addons>
