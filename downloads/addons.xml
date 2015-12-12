@@ -2,7 +2,7 @@
 <addons>
     <addon id="plugin.firedrop" 
 			name="FireDrop" 
-			version="0.1.7" 
+			version="0.1.8" 
 			provider-name="FireDrop">
         <requires>
             <import addon="xbmc.python" version="2.14.0"/>
